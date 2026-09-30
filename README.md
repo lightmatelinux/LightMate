@@ -1,0 +1,1 @@
+LightMate Linux is a distribution of Linux that focuses on things like being lightweight. LightMate is designed for old computers to make them function better. It features the MATE desktop environment, and is based off Debian.
