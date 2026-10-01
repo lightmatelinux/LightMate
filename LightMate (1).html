@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LightMate: MATE for old 32-bit and 64-bit PCs</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F3F0E6;
+  --beige: #DDD5C0;
+  --ink: #1F2A1C;
+  --ink-soft: #4A5646;
+  --leaf: #46701F;
+  --leaf-fill: #87A94B;
+  --screen: #16211A;
+  --screen-ink: #CFE3B4;
+  --line: rgba(31, 42, 28, .22);
+  --display: "Bricolage Grotesque", "Trebuchet MS", "Segoe UI", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, "Courier New", monospace;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131A13;
+    --beige: #262E23;
+    --ink: #EAE7D9;
+    --ink-soft: #B4B9A6;
+    --leaf: #A5C96A;
+    --leaf-fill: #87A94B;
+    --screen: #0B110C;
+    --screen-ink: #CFE3B4;
+    --line: rgba(234, 231, 217, .22);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #131A13;
+  --beige: #262E23;
+  --ink: #EAE7D9;
+  --ink-soft: #B4B9A6;
+  --leaf: #A5C96A;
+  --leaf-fill: #87A94B;
+  --screen: #0B110C;
+  --screen-ink: #CFE3B4;
+  --line: rgba(234, 231, 217, .22);
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+a { color: var(--leaf); text-underline-offset: .18em; }
+:focus-visible { outline: 3px solid var(--leaf-fill); outline-offset: 3px; }
+
+.note {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+  padding: .55rem 1rem;
+  font-size: .95rem;
+  font-style: italic;
+}
+
+.wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* hero */
+.hero { padding: 3.5rem 0 4rem; }
+.hero .wrap { display: grid; gap: 2.5rem; align-items: center; }
+@media (min-width: 60rem) { .hero .wrap { grid-template-columns: 1.1fr .9fr; } }
+.logo { display: block; width: clamp(64px, 14vw, 104px); height: auto; margin: 0 0 1.1rem; }
+h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(3.4rem, 13vw, 7.5rem);
+  line-height: .95;
+  letter-spacing: -.035em;
+  margin: 0 0 1.25rem;
+}
+.lede { font-size: 1.25rem; max-width: 34rem; margin: 0 0 1.75rem; color: var(--ink-soft); }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.btn {
+  font: 500 1rem/1 var(--body);
+  padding: .95rem 1.35rem;
+  border-radius: 6px;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn:hover { background: var(--leaf-fill); border-color: var(--leaf-fill); color: #1F2A1C; }
+
+/* the old-PC monitor: the one memorable thing */
+.monitor { max-width: 32rem; width: 100%; justify-self: center; }
+.bezel {
+  background: var(--beige);
+  padding: 14px 14px 10px;
+  border-radius: 18px 18px 8px 8px;
+  border: 2px solid var(--line);
+}
+.screen {
+  background: var(--screen);
+  color: var(--screen-ink);
+  font-family: var(--mono);
+  font-size: .8rem;
+  line-height: 1.7;
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 15.5rem;
+  overflow-x: auto;
+}
+.screen .ln { white-space: pre; display: block; }
+.screen .ok { color: #9BCB5A; }
+.screen .wait { color: #E2C56F; }
+.chin { display: flex; align-items: center; justify-content: space-between; padding: .55rem .25rem 0; font-size: .8rem; color: var(--ink-soft); }
+.led { width: 9px; height: 9px; border-radius: 50%; background: var(--leaf-fill); box-shadow: 0 0 0 2px var(--line); }
+.foot { height: 12px; width: 42%; margin: 0 auto; background: var(--beige); border: 2px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; }
+.anim .ln { opacity: 0; }
+.anim .ln.show { opacity: 1; }
+
+/* sections */
+section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
+h2 { font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.1; letter-spacing: -.02em; margin: 0 0 1rem; }
+h3 { font-family: var(--display); font-weight: 500; font-size: 1.35rem; margin: 0 0 .4rem; }
+p { max-width: 42rem; margin: 0 0 1rem; }
+.two { display: grid; gap: 0; }
+@media (min-width: 46rem) { .two { grid-template-columns: 1fr 1fr; } .two > div + div { border-left: 1px solid var(--line); padding-left: 2rem; } .two > div { padding-right: 2rem; } }
+.two > div { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.two > div + div { border-top: 1px solid var(--line); }
+@media (min-width: 46rem) { .two > div + div { border-top: 0; } }
+.status { color: var(--ink-soft); font-size: .95rem; margin: .75rem 0 0; }
+.sum { display: block; font-family: var(--mono); font-size: .72rem; line-height: 1.5; word-break: break-all; margin-top: .25rem; padding: .5rem .6rem; }
+.btn[disabled] { background: transparent; color: var(--ink-soft); border-style: dashed; border-color: var(--line); cursor: not-allowed; }
+.btn[disabled]:hover { background: transparent; color: var(--ink-soft); border-color: var(--line); }
+
+.tabs { display: flex; gap: .5rem; margin-bottom: 1rem; }
+.tab { font: 500 .95rem var(--body); padding: .6rem 1rem; border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 6px; cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.codebox { position: relative; }
+pre {
+  margin: 0;
+  background: var(--screen);
+  color: var(--screen-ink);
+  font-family: var(--mono);
+  font-size: .82rem;
+  line-height: 1.65;
+  padding: 1.1rem 1.1rem 1.1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.copy { position: absolute; top: .5rem; right: .5rem; font: 500 .8rem var(--body); padding: .4rem .7rem; border-radius: 5px; border: 1px solid var(--screen-ink); background: var(--screen); color: var(--screen-ink); cursor: pointer; }
+.copy:hover { background: var(--screen-ink); color: var(--screen); }
+.codebox pre { padding-top: 2.6rem; }
+
+.tablewrap { overflow-x: auto; max-width: 100%; margin-bottom: 1rem; }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 1rem; }
+th, td { text-align: left; padding: .8rem 1rem .8rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+thead th { font-family: var(--display); font-weight: 500; font-size: 1.05rem; border-bottom: 2px solid var(--ink); }
+tbody th { font-weight: 500; white-space: nowrap; }
+ul.plain { list-style: none; padding: 0; margin: 0; max-width: 42rem; }
+ul.plain li { padding: .9rem 0; border-bottom: 1px solid var(--line); }
+ul.plain li:last-child { border-bottom: 0; }
+ul.plain strong { font-weight: 500; display: block; }
+kbd { font-family: var(--mono); font-size: .9em; background: var(--beige); border: 1px solid var(--line); border-radius: 4px; padding: .05em .4em; }
+code { font-family: var(--mono); font-size: .9em; background: var(--beige); padding: .05em .35em; border-radius: 4px; }
+
+footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--ink-soft); font-size: .95rem; }
+footer p { margin: 0 0 .5rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .anim .ln { opacity: 1; }
+}
+</style>
+</head>
+<body>
+
+<div class="note">Sadly vibecoded with Claude</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <img class="logo" src="data:image/png;base64,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" alt="LightMate logo: a green leaf with a play button" width="96" height="96">
+      <h1>LightMate</h1>
+      <p class="lede">A MATE desktop for old 32-bit and 64-bit PCs. Built on Debian 12 and trimmed down, so more of your RAM is left for the things you actually run.</p>
+      <div class="actions">
+        <a class="btn" href="#downloads">See downloads</a>
+        <a class="btn ghost" href="#build">Build it yourself</a>
+      </div>
+    </div>
+
+    <div class="monitor" aria-label="Terminal showing the LightMate build steps">
+      <div class="bezel">
+        <div class="screen" id="screen">
+          <span class="ln">$ lb config --architectures i386</span>
+          <span class="ln">$ lb build</span>
+          <span class="ln"><span class="ok">[ ok ]</span> base: Debian 12 (bookworm)</span>
+          <span class="ln"><span class="ok">[ ok ]</span> desktop: MATE, no recommends</span>
+          <span class="ln"><span class="ok">[ ok ]</span> targets: i386 and amd64</span>
+          <span class="ln"><span class="ok">[ ok ]</span> live ISO: v0.1</span>
+          <span class="ln">$ _</span>
+        </div>
+        <div class="chin"><span>LightMate</span><span class="led" aria-hidden="true"></span></div>
+      </div>
+      <div class="foot" aria-hidden="true"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Made for machines everyone else gave up on</h2>
+      <p>Laptops and desktops from the Core 2 Duo era still work fine for browsing, writing and video, if the system on them stays out of the way. LightMate keeps the classic MATE desktop and drops everything that is not needed to use it.</p>
+      <p>It is a small, personal project. The first release, v0.1, is out, so expect rough edges and please report what breaks.</p>
+    </div>
+  </section>
+
+  <section id="downloads">
+    <div class="wrap">
+      <h2>Downloads</h2>
+      <div class="two">
+        <div>
+          <h3>32-bit (i386)</h3>
+          <p>For older CPUs that support PAE. Uses the <code>686-pae</code> kernel.</p>
+          <a class="btn" href="https://github.com/lightmatelinux/LightMate/releases/">Get 32-bit ISO</a>
+          <p class="status">SHA256:</p>
+          <code class="sum">45342427cff22af9f1f21302b56a1656589f0716869c06fa0e84e7c7f95c21e1</code>
+        </div>
+        <div>
+          <h3>64-bit (amd64)</h3>
+          <p>For any 64-bit PC, including most Core 2 machines.</p>
+          <a class="btn" href="https://github.com/lightmatelinux/LightMate/releases/">Get 64-bit ISO</a>
+          <p class="status">SHA256:</p>
+          <code class="sum">f9e05dd43612009408a9c332584ee422f3fa1f93bdf041414d213d4011242fc7</code>
+        </div>
+      </div>
+      <p class="status">All files and older versions are on the <a href="https://github.com/lightmatelinux/LightMate/releases/">releases page</a>. To check a download, run <code>sha256sum FILENAME</code> and compare the result with the checksum above. To make a USB stick, write the ISO with Rufus in DD Image mode, or with <code>dd</code> on Linux.</p>
+    </div>
+  </section>
+
+  <section id="requirements">
+    <div class="wrap">
+      <h2>System requirements</h2>
+      <p>These are design targets, not tested results. They will be updated after the first real builds are tried on real hardware.</p>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Part</th><th scope="col">Minimum</th><th scope="col">Recommended</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">CPU, 32-bit</th><td>i686 with PAE</td><td>Core 2 Duo or newer</td></tr>
+            <tr><th scope="row">CPU, 64-bit</th><td>Any x86-64 CPU</td><td>Core 2 Duo or newer</td></tr>
+            <tr><th scope="row">RAM</th><td>1 GB</td><td>2 GB or more</td></tr>
+            <tr><th scope="row">Storage</th><td>8 GB</td><td>16 GB or more, SSD if possible</td></tr>
+            <tr><th scope="row">Screen</th><td>1024×600</td><td>1280×800 or larger</td></tr>
+            <tr><th scope="row">Graphics</th><td>Any card with basic 2D support</td><td>No 3D acceleration needed</td></tr>
+            <tr><th scope="row">USB stick</th><td>4 GB</td><td>8 GB</td></tr>
+            <tr><th scope="row">Boot mode</th><td>Legacy BIOS or 64-bit UEFI</td><td>Legacy BIOS on pre-2011 machines</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="status">Not sure if your 32-bit PC has PAE? Boot any Linux live USB and run <code>grep -c pae /proc/cpuinfo</code>. A result above 0 means it does. Some Wi-Fi chips (for example Broadcom) need extra non-free firmware that is not included by default.</p>
+    </div>
+  </section>
+
+  <section id="build">
+    <div class="wrap">
+      <h2>Build it yourself</h2>
+      <p>You need a Debian or Ubuntu machine (a VM is fine) with about 15 GB of free disk space, 4 GB of RAM and an internet connection.</p>
+      <p>LightMate is made with Debian's <code>live-build</code>. Run these on a Debian or Ubuntu machine and you get a bootable ISO. Use a separate folder for each architecture.</p>
+      <div class="tabs" role="tablist" aria-label="Architecture">
+        <button class="tab" role="tab" id="tab-32" aria-selected="true" aria-controls="code">32-bit</button>
+        <button class="tab" role="tab" id="tab-64" aria-selected="false" aria-controls="code">64-bit</button>
+      </div>
+      <div class="codebox" id="code" role="tabpanel">
+        <button class="copy" id="copy" type="button">Copy</button>
+<pre id="cmd">sudo apt install live-build
+mkdir lightmate &amp;&amp; cd lightmate
+lb config --distribution bookworm \
+  --architectures i386 --linux-flavours 686-pae \
+  --binary-images iso-hybrid \
+  --archive-areas "main contrib non-free non-free-firmware" \
+  --apt-recommends false \
+  --bootappend-live "boot=live components quiet splash"
+mkdir -p config/package-lists
+printf '%s\n' mate-desktop-environment-core lightdm \
+  lightdm-gtk-greeter network-manager-gnome \
+  epiphany-browser firmware-iwlwifi \
+  &gt; config/package-lists/lightmate.list.chroot
+sudo lb build</pre>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What LightMate aims for</h2>
+      <p>These are design goals. There are no benchmark numbers yet.</p>
+      <ul class="plain">
+        <li><strong>Only what you need is installed</strong>Recommended packages are switched off, so the system contains what is listed and nothing extra.</li>
+        <li><strong>A plain login and desktop</strong>LightDM and MATE with the Marco window manager, without heavy visual effects.</li>
+        <li><strong>Sensible memory use</strong>Compressed swap in RAM (zram) so machines with a few GB do not stall.</li>
+        <li><strong>Both architectures, one recipe</strong>The same config builds 32-bit and 64-bit images.</li>
+        <li><strong>A browser that fits each build</strong>The 64-bit image ships Firefox ESR. The 32-bit image ships Epiphany (GNOME Web), because Firefox no longer supports 32-bit Linux.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Known issues</h2>
+      <p>Some older laptops only boot with ACPI turned off. At the boot menu press <kbd>Tab</kbd> (BIOS boot) or <kbd>e</kbd> (UEFI boot), replace <code>quiet splash</code> with <code>acpi=off</code>, then boot. Power management is limited in this mode.</p>
+      <p>On the 32-bit build, browser choice is limited: Firefox and Chrome no longer support 32-bit Linux. Epiphany gets updates through Debian, but it has fewer add-ons and can struggle with heavy web apps. If your PC can run 64-bit, use the 64-bit build.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>LightMate is an independent project based on Debian. It is not affiliated with or endorsed by the Debian project or the MATE project.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Boot-screen sequence: plays once on load.
+  var screen = document.getElementById('screen');
+  var lines = screen ? screen.querySelectorAll('.ln') : [];
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (screen && !reduce) {
+    screen.classList.add('anim');
+    Array.prototype.forEach.call(lines, function (el, i) {
+      setTimeout(function () { el.classList.add('show'); }, 350 + i * 420);
+    });
+  }
+
+  // Architecture tabs and copy button.
+  var pre = document.getElementById('cmd');
+  var tab32 = document.getElementById('tab-32');
+  var tab64 = document.getElementById('tab-64');
+  var copy = document.getElementById('copy');
+  var text32 = pre.textContent;
+  var text64 = text32
+    .replace('--architectures i386 --linux-flavours 686-pae', '--architectures amd64 --linux-flavours amd64')
+    .replace('epiphany-browser', 'firefox-esr');
+
+  function pick(is32) {
+    pre.textContent = is32 ? text32 : text64;
+    tab32.setAttribute('aria-selected', String(is32));
+    tab64.setAttribute('aria-selected', String(!is32));
+  }
+  tab32.addEventListener('click', function () { pick(true); });
+  tab64.addEventListener('click', function () { pick(false); });
+
+  copy.addEventListener('click', function () {
+    var done = function (msg) {
+      copy.textContent = msg;
+      setTimeout(function () { copy.textContent = 'Copy'; }, 1800);
+    };
+    try {
+      navigator.clipboard.writeText(pre.textContent).then(
+        function () { done('Copied'); },
+        function () { fallback(); }
+      );
+    } catch (e) { fallback(); }
+    function fallback() {
+      try {
+        var r = document.createRange();
+        r.selectNodeContents(pre);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+        done('Selected. Copy it');
+      } catch (e) { done('Select and copy'); }
+    }
+  });
+})();
+</script>
+</body>
+</html>
